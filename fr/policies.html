@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conditions de service PMG Déménagement, politiques de dommages et procédures d'assurance. Politiques transparentes pour les clients de Montréal.">
+  <title>Conditions de Service et Politiques | PMG Déménagement - Montréal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #f8f9fa;
+      padding-top: 80px;
+    }
+    .policy-section {
+      background: white;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .highlight-box {
+      background: #e3f2fd;
+      border-left: 4px solid #2196F3;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    .important-note {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="/fr">
+        <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="PMG Logo" style="height: 40px;" class="me-2">
+        <span>PMG Déménagement</span>
+      </a>
+      <div class="navbar-nav ms-auto">
+        <a class="btn btn-outline-primary me-2" href="/fr/quote">Obtenir une soumission</a>
+        <a class="btn btn-outline-secondary me-2" href="/fr/contact">Contact</a>
+        <a class="btn btn-sm btn-outline-secondary" href="/policies">EN</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <h1 class="text-center mb-5">Conditions de Service et Politiques</h1>
+    
+    <!-- Politique de dommages et responsabilité -->
+    <div class="policy-section">
+      <h2>🛡️ Politique de Dommages et Responsabilité</h2>
+      
+      <h4>Usure Normale et Dommages Mineurs</h4>
+      <p>PMG Déménagement prend grand soin de vos biens. Cependant, nous voulons que vous compreniez que des marques d'usure mineures et de manipulation normale peuvent survenir pendant le processus de déménagement, incluant :</p>
+      <ul>
+        <li>Légères éraflures sur les surfaces des meubles</li>
+        <li>Petites égratignures sur les articles en bois ou plastique</li>
+        <li>Petites marques de pression dues à l'emballage protecteur</li>
+        <li>Accumulation de poussière pendant le transport</li>
+      </ul>
+
+      <div class="highlight-box">
+        <strong>Seuil de Réclamation d'Assurance :</strong> Les réclamations pour des dommages dépassant 300$ CAD seront transférées à notre assureur pour évaluation et compensation potentielle.
+      </div>
+
+      <h4>Signalement de Dommages</h4>
+      <p>Tout problème de dommage doit être signalé :</p>
+      <ul>
+        <li><strong>Immédiatement à la livraison</strong> - avant que notre équipe quitte votre emplacement</li>
+        <li><strong>Dans les 24 heures</strong> - pour les articles découverts endommagés après le déballage</li>
+        <li><strong>Avec preuves photographiques</strong> - photos claires des dommages</li>
+      </ul>
+
+      <div class="important-note">
+        <strong>Important :</strong> PMG Déménagement n'est pas responsable des dommages préexistants, de l'usure normale, ou des dommages aux articles emballés par le client.
+      </div>
+    </div>
+
+    <!-- Conditions de service -->
+    <div class="policy-section">
+      <h2>📋 Conditions de Service</h2>
+      
+      <h4>Réservation et Planification</h4>
+      <ul>
+        <li><strong>Confirmation :</strong> Toutes les réservations nécessitent une confirmation écrite</li>
+        <li><strong>Annulation :</strong> Préavis de 24 heures requis pour les annulations</li>
+        <li><strong>Reprogrammation :</strong> Report pour météo ou urgence sans frais supplémentaires</li>
+        <li><strong>Frais d'absence :</strong> Frais de 100$ si le client n'est pas disponible à l'heure prévue</li>
+      </ul>
+
+      <h4>Exigences d'Accès et Préparation</h4>
+      <ul>
+        <li>Voies d'accès dégagées aux articles à déménager</li>
+        <li>Réservations d'ascenseur (responsabilité du client)</li>
+        <li>Permis de stationnement si requis</li>
+        <li>Le démontage d'articles complexes peut entraîner des frais supplémentaires</li>
+      </ul>
+
+      <h4>Frais Supplémentaires</h4>
+      <div class="highlight-box">
+        <strong>Tarification Transparente :</strong> Tous les frais supplémentaires potentiels sont discutés à l'avance, incluant :
+        <ul class="mt-2">
+          <li>Supplément escaliers : 25$ par étage pour les objets lourds</li>
+          <li>Transport long (>100 pi) : 50$/heure supplémentaire</li>
+          <li>Temps d'attente : Facturé au taux horaire régulier</li>
+          <li>Articles très lourds (>150 lbs) : Frais de manutention spéciale peuvent s'appliquer</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Assurance et réclamations -->
+    <div class="policy-section">
+      <h2>🏥 Couverture d'Assurance et Processus de Réclamation</h2>
+      
+      <h4>Couverture d'Assurance</h4>
+      <p>PMG Déménagement détient une assurance responsabilité complète couvrant :</p>
+      <ul>
+        <li>Dommages aux biens du client pendant le transport</li>
+        <li>Dommages à la propriété à l'origine ou la destination</li>
+        <li>Perte d'articles sous nos soins</li>
+      </ul>
+
+      <h4>Processus de Réclamation pour Dommages Plus de 300$</h4>
+      <ol>
+        <li><strong>Signaler immédiatement</strong> - Contactez-nous dans les 24 heures</li>
+        <li><strong>Documentation</strong> - Fournir photos et description des dommages</li>
+        <li><strong>Référence à l'assurance</strong> - Nous transférons la réclamation à notre assureur</li>
+        <li><strong>Évaluation</strong> - L'expert en sinistres évalue la réclamation</li>
+        <li><strong>Résolution</strong> - Réparation ou remplacement organisé si réclamation approuvée</li>
+      </ol>
+
+      <div class="important-note">
+        <strong>Délai :</strong> Les réclamations d'assurance prennent typiquement 10-14 jours ouvrables pour résolution.
+      </div>
+
+      <h4>Responsabilités du Client</h4>
+      <ul>
+        <li>Déclarer avec précision les articles de grande valeur avant le déménagement</li>
+        <li>Fournir une documentation appropriée pour les articles de valeur</li>
+        <li>Permettre un accès raisonnable pour l'évaluation des dommages</li>
+        <li>Coopérer avec l'enquête d'assurance si requis</li>
+      </ul>
+    </div>
+
+    <!-- Paiement et facturation -->
+    <div class="policy-section">
+      <h2>💳 Politique de Paiement et Facturation</h2>
+      
+      <h4>Conditions de Paiement</h4>
+      <ul>
+        <li><strong>Facturation horaire :</strong> Arrondie au 15 minutes près</li>
+        <li><strong>Paiement dû :</strong> À la fin du service</li>
+        <li><strong>Méthodes acceptées :</strong> Comptant, cartes crédit/débit, virement électronique</li>
+        <li><strong>Pas de frais cachés :</strong> Tous les frais discutés et approuvés à l'avance</li>
+      </ul>
+
+      <div class="highlight-box">
+        <strong>Notre Promesse :</strong> Vous payez seulement pour le temps travaillé. Le chrono commence quand nous commençons le chargement et s'arrête quand nous finissons le déchargement.
+      </div>
+    </div>
+
+    <!-- Informations de contact -->
+    <div class="policy-section">
+      <h2>📞 Questions ou Préoccupations ?</h2>
+      <p>Si vous avez des questions sur ces politiques ou devez déposer une réclamation :</p>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <strong>Contactez PMG Déménagement :</strong><br>
+          📧 Courriel : demenagementpmg@gmail.com<br>
+          📱 Téléphone : (514) 831-1764<br>
+          🕒 Heures : Lundi-Samedi 8h-18h<br>
+          📍 Service : Montréal et régions environnantes
+        </div>
+        <div class="col-md-6">
+          <strong>Pour les questions urgentes :</strong><br>
+          • Rapport de dommages : Appelez dans les 24h<br>
+          • Problèmes le jour du service : Appelez immédiatement<br>
+          • Demandes générales : Réponse par courriel dans les 24h<br>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5 mb-4">
+      <p class="text-muted">Dernière mise à jour : Septembre 2025</p>
+      <a href="/fr/quote" class="btn btn-primary btn-lg">Obtenir Votre Soumission Gratuite</a>
+    </div>
+  </div>
+
+  <footer class="bg-white text-center py-3 border-top">
+    <div class="container">
+      <small class="text-muted">© 2025 PMG Déménagement – Transparent, Professionnel, Fiable</small>
+    </div>
+  </footer>
+</body>
+</html>

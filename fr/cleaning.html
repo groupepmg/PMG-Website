@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17017524557"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-17017524557');
+</script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="PMG Déménagement offre des services de nettoyage avant et après déménagement à Montréal. Laissez-nous gérer le ménage pendant que vous vous installez.">
+  <meta name="keywords" content="nettoyage Montréal, services de nettoyage déménagement, nettoyage avant déménagement, nettoyage après déménagement, PMG nettoyage, nettoyeurs professionnels">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services de Nettoyage - PMG</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnhzsQxML5AZbTB6aeF0bKpXThGSbS-4s&libraries=places"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const input = document.getElementById("serviceAddress");
+      if (input) {
+        new google.maps.places.Autocomplete(input);
+      }
+    });
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <style>
+    @media (max-width: 576px) {
+      .container {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+      .form-label {
+        font-size: 1rem;
+      }
+      h1 {
+        font-size: 1.4rem;
+      }
+      .lead {
+        font-size: 1rem;
+      }
+      .form-control,
+      select,
+      textarea {
+        font-size: 1rem;
+        padding: 0.75rem;
+      }
+      button.btn {
+        padding: 0.75rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/fr">PMG Moving Company</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavFr" aria-controls="navbarNavFr" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavFr">
+        <div class="navbar-nav">
+          <a class="btn btn-outline-primary me-2 mb-2 mb-lg-0" href="/fr/quote" style="border-radius: 30px; padding: 10px 20px; min-width: 140px;">Obtenir une soumission</a>
+          <a class="btn btn-outline-success me-2 mb-2 mb-lg-0" href="/fr/cleaning" style="border-radius: 30px; padding: 10px 20px; min-width: 140px;">Services de nettoyage</a>
+          <a class="btn btn-outline-info me-2 mb-2 mb-lg-0" href="/fr/reviews" style="border-radius: 30px; padding: 10px 20px; min-width: 140px;">Avis</a>
+          <a class="btn btn-outline-dark me-2 mb-2 mb-lg-0" href="/fr/gallery" style="border-radius: 30px; padding: 10px 20px; min-width: 140px;">Galerie</a>
+          <a class="btn btn-outline-secondary mb-2 mb-lg-0" href="/fr/contact" style="border-radius: 30px; padding: 10px 20px; min-width: 140px;">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container px-4 py-5 mt-5">
+{% if name %}
+  <div class="alert alert-success text-center" role="alert">
+    <h4 class="alert-heading">Merci, {{ name }} !</h4>
+    <p>Nous avons bien reçu votre demande de service de nettoyage et nous vous contacterons sous peu.</p>
+  </div>
+{% endif %}
+    <h1 class="mb-4">🧼 Services de Nettoyage Avant et Après Déménagement</h1>
+    <p class="lead">Laissez PMG s'occuper du nettoyage pendant que vous vous installez tranquillement.</p>
+    <hr class="my-4">
+
+    <div class="container px-4 py-5" style="max-width: 600px; background-color: #ffffff; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+      <form method="POST" action="/fr/cleaning" class="text-start mx-auto w-100">
+        <!-- Hidden fields to specify service type -->
+        <input type="hidden" name="serviceType" value="cleaning">
+        <input type="hidden" name="source" value="website">
+        
+        <div class="mb-3">
+          <label class="form-label">Nom complet</label>
+          <input type="text" class="form-control form-control-lg w-100" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Courriel</label>
+          <input type="email" class="form-control form-control-lg w-100" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Numéro de téléphone</label>
+          <input type="tel" class="form-control form-control-lg w-100" name="phone">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Adresse du service</label>
+          <input type="text" class="form-control form-control-lg w-100" name="serviceAddress" id="serviceAddress" placeholder="Entrez l'adresse où le nettoyage est requis" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Date de nettoyage souhaitée</label>
+          <input type="date" class="form-control form-control-lg w-100" name="cleaningDate" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Type de nettoyage</label>
+          <select class="form-control form-control-lg w-100" name="cleaningType" required>
+            <option value="">Choisir...</option>
+            <option value="Pre-Move Out">Avant le déménagement</option>
+            <option value="Post-Move In">Après le déménagement</option>
+            <option value="Deep Cleaning">Nettoyage en profondeur</option>
+            <option value="Other">Autre</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Taille de la propriété</label>
+          <select class="form-control form-control-lg w-100" name="propertySize">
+            <option value="">Choisir...</option>
+            <option value="Studio">Studio</option>
+            <option value="1 Bedroom">1 chambre</option>
+            <option value="2 Bedrooms">2 chambres</option>
+            <option value="3+ Bedrooms">3+ chambres</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Avez-vous des animaux?</label>
+          <select class="form-control form-control-lg w-100" name="pets">
+            <option value="">Choisir...</option>
+            <option value="Yes">Oui</option>
+            <option value="No">Non</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Commentaires additionnels</label>
+          <textarea class="form-control form-control-lg w-100" name="comments" rows="4" placeholder="Veuillez indiquer toute instruction spéciale ou besoin particulier."></textarea>
+        </div>
+        <div class="text-end mt-3 mb-4">
+          <button type="submit" class="btn btn-success btn-lg w-100">Envoyer la demande</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

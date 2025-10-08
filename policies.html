@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PMG Moving Company terms of service, damage policies, and insurance procedures. Transparent moving policies for Montreal customers.">
+  <title>Terms of Service & Policies | PMG Moving - Montreal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #f8f9fa;
+      padding-top: 80px;
+    }
+    .policy-section {
+      background: white;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .highlight-box {
+      background: #e3f2fd;
+      border-left: 4px solid #2196F3;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    .important-note {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="PMG Logo" style="height: 40px;" class="me-2">
+        <span>PMG Moving Company</span>
+      </a>
+      <div class="navbar-nav ms-auto">
+        <a class="btn btn-outline-primary me-2" href="/quote">Get a Quote</a>
+        <a class="btn btn-outline-secondary me-2" href="/contact">Contact</a>
+        <a class="btn btn-sm btn-outline-secondary" href="/fr/policies">FR</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <h1 class="text-center mb-5">Terms of Service & Policies</h1>
+    
+    <!-- Damage & Liability Policy -->
+    <div class="policy-section">
+      <h2>🛡️ Damage & Liability Policy</h2>
+      
+      <h4>Normal Wear and Minor Damage</h4>
+      <p>PMG Moving takes great care in handling your belongings. However, we want you to understand that minor wear and normal handling marks may occur during the moving process, including:</p>
+      <ul>
+        <li>Light scuffs on furniture surfaces</li>
+        <li>Minor scratches on wood or plastic items</li>
+        <li>Small pressure marks from protective wrapping</li>
+        <li>Dust accumulation during transport</li>
+      </ul>
+
+      <div class="highlight-box">
+        <strong>Insurance Claims Threshold:</strong> Claims for damages exceeding $300 CAD will be forwarded to our insurance provider for assessment and potential compensation.
+      </div>
+
+      <h4>Damage Reporting</h4>
+      <p>Any damage concerns must be reported:</p>
+      <ul>
+        <li><strong>Immediately upon delivery</strong> - before our team leaves your location</li>
+        <li><strong>Within 24 hours</strong> - for items discovered damaged after unpacking</li>
+        <li><strong>With photographic evidence</strong> - clear photos of the damage</li>
+      </ul>
+
+      <div class="important-note">
+        <strong>Important:</strong> PMG Moving is not liable for pre-existing damage, normal wear and tear, or damage to items packed by the customer.
+      </div>
+    </div>
+
+    <!-- Service Terms -->
+    <div class="policy-section">
+      <h2>📋 Service Terms & Conditions</h2>
+      
+      <h4>Booking & Scheduling</h4>
+      <ul>
+        <li><strong>Confirmation:</strong> All bookings require written confirmation</li>
+        <li><strong>Cancellation:</strong> 24-hour notice required for cancellations</li>
+        <li><strong>Rescheduling:</strong> Weather or emergency rescheduling at no extra cost</li>
+        <li><strong>No-show fee:</strong> $100 charge if customer not available at scheduled time</li>
+      </ul>
+
+      <h4>Access & Preparation Requirements</h4>
+      <ul>
+        <li>Clear access paths to items being moved</li>
+        <li>Elevator reservations (customer responsibility)</li>
+        <li>Parking permits if required</li>
+        <li>Disassembly of complex items may incur additional charges</li>
+      </ul>
+
+      <h4>Additional Fees</h4>
+      <div class="highlight-box">
+        <strong>Transparent Pricing:</strong> All potential additional fees are discussed upfront, including:
+        <ul class="mt-2">
+          <li>Stairs surcharge: $25 per flight for heavy items</li>
+          <li>Long carry (>100ft): $50/hour additional</li>
+          <li>Waiting time: Charged at regular hourly rate</li>
+          <li>Extra heavy items (>150lbs): Special handling fee may apply</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Insurance & Claims -->
+    <div class="policy-section">
+      <h2>🏥 Insurance Coverage & Claims Process</h2>
+      
+      <h4>Insurance Coverage</h4>
+      <p>PMG Moving carries comprehensive liability insurance covering:</p>
+      <ul>
+        <li>Damage to customer property during transport</li>
+        <li>Property damage at origin or destination</li>
+        <li>Loss of items under our care</li>
+      </ul>
+
+      <h4>Claims Process for Damages Over $300</h4>
+      <ol>
+        <li><strong>Report immediately</strong> - Contact us within 24 hours</li>
+        <li><strong>Documentation</strong> - Provide photos and description of damage</li>
+        <li><strong>Insurance referral</strong> - We forward claim to our insurance provider</li>
+        <li><strong>Assessment</strong> - Insurance adjuster evaluates the claim</li>
+        <li><strong>Resolution</strong> - Repair or replacement arranged if claim approved</li>
+      </ol>
+
+      <div class="important-note">
+        <strong>Timeline:</strong> Insurance claims typically take 10-14 business days for resolution.
+      </div>
+
+      <h4>Customer Responsibilities</h4>
+      <ul>
+        <li>Accurately declare high-value items before the move</li>
+        <li>Provide proper documentation for valuable items</li>
+        <li>Allow reasonable access for damage assessment</li>
+        <li>Cooperate with insurance investigation if required</li>
+      </ul>
+    </div>
+
+    <!-- Payment & Billing -->
+    <div class="policy-section">
+      <h2>💳 Payment & Billing Policy</h2>
+      
+      <h4>Payment Terms</h4>
+      <ul>
+        <li><strong>Hourly billing:</strong> Rounded to the nearest 15 minutes</li>
+        <li><strong>Payment due:</strong> Upon completion of service</li>
+        <li><strong>Accepted methods:</strong> Cash, credit/debit cards, e-transfer</li>
+        <li><strong>No hidden fees:</strong> All charges discussed and approved beforehand</li>
+      </ul>
+
+      <div class="highlight-box">
+        <strong>Our Promise:</strong> You pay only for the time we work. Clock starts when we begin loading and stops when we finish unloading.
+      </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="policy-section">
+      <h2>📞 Questions or Concerns?</h2>
+      <p>If you have any questions about these policies or need to file a claim:</p>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <strong>Contact PMG Moving:</strong><br>
+          📧 Email: demenagementpmg@gmail.com<br>
+          📱 Phone: (514) 831-1764<br>
+          🕒 Hours: Monday-Saturday 8AM-6PM<br>
+          📍 Serving: Montreal & surrounding areas
+        </div>
+        <div class="col-md-6">
+          <strong>For urgent matters:</strong><br>
+          • Damage reports: Call within 24 hours<br>
+          • Service day issues: Call immediately<br>
+          • General inquiries: Email response within 24h<br>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5 mb-4">
+      <p class="text-muted">Last updated: September 2025</p>
+      <a href="/quote" class="btn btn-primary btn-lg">Get Your Free Quote</a>
+    </div>
+  </div>
+
+  <footer class="bg-white text-center py-3 border-top">
+    <div class="container">
+      <small class="text-muted">© 2025 PMG Moving Company – Transparent, Professional, Reliable</small>
+    </div>
+  </footer>
+</body>
+</html>
